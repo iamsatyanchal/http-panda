@@ -63,16 +63,16 @@ function App() {
     { code: 507, message: "Insufficient Storage" },
     { code: 508, message: "Loop Detected" },
     { code: 510, message: "Not Extended" },
-    { code: 511, message: "Network Authentication Required" }];
+    { code: 511, message: "Network Auth Required" }];
   return (
     <div className="flex flex-col justify-center items-center bg-green-500">
-      <div className="flex flex-col grid grid-cols-3 gap-4">
+      <div className="flex flex-col grid grid-cols-3 gap-6">
         {status_codes.map((code) => {
           return (
-            <div>
-              <img src={`./${code.code}.jpg`} />
-              <p key={code.code}>{code.code}</p>
-              <p key={code.message}>{code.message}</p>
+            <div className="bg-white p-2 w-72 rounded-lg">
+              <span className="absolute px-2 rounded-[0px_0px_6px_0px] text-center bg-white text-lg text-black" key={code.code}>{code.code}</span>
+              <img src={`./${code.code}.jpg`} className="w-72 h-72 rounded-[9px_9px_0px_0px] border-[3px] border-white" />
+              <p className="text-center px-1 mt-2 text-xl text-black box-shadow-lg" key={code.code}> {code.message}</p>
             </div>
           )
         })}
