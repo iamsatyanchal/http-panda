@@ -70,6 +70,7 @@ function App() {
         {status_codes.map((code) => {
           return (
             <div>
+              <img src={`./${code.code}.jpg`} />
               <p key={code.code}>{code.code}</p>
               <p key={code.message}>{code.message}</p>
             </div>
