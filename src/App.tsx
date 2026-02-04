@@ -65,15 +65,15 @@ function App() {
   return (
     <div className=" flex flex-col justify-center items-center bg-green-500/90 bg-[url('./Bamboo-PNG-Pic-Background.png')] bg-no-repeat bg-center bg-cover min-h-screen bg-fixed">
       <div className="text-center py-6">
-        <p className="text-8xl text-white mb-2 drop-shadow-[0_1px_10px_rgba(0,0,0,0.6)]">http~pandas!</p>
-        <p className="text-[28px] mt-5 text-white drop-shadow-[0px_3px_6px_rgba(0,0,0,0.6)]">~ pandas for every http response status code ~</p>
+        <p className="md:text-8xl text-5xl text-white mb-2 drop-shadow-[0_1px_10px_rgba(0,0,0,0.6)]">http~pandas!</p>
+        <p className="md:text-[28px] text-[16px] mt-5 text-white drop-shadow-[0px_3px_6px_rgba(0,0,0,0.6)]">~ pandas for every http response status code ~</p>
         <div className="w-full my-4 relative rounded-lg ring-1 ring-gray-900 ring-opacity-5 bg-green-700 block">
-          <pre className="block scrollbar-none overflow-auto text-white text-sm leading-normal">
-            <code className="inline-block my-3 scrolling-touch subpixel-antialiased text-xl">http-pandas.vercel.app/<span className="text-red-400 font-bold">[code]</span>.jpg</code>
+          <pre className="block scrollbar-none overflow-auto text-white md:text-sm text-xs leading-normal">
+            <code className="inline-block my-3 scrolling-touch subpixel-antialiased md:text-xl text-xs">http-pandas.vercel.app/<span className="text-red-400 font-bold">[code]</span>.jpg</code>
           </pre>
         </div>
       </div>
-      <div className="flex flex-col grid grid-cols-3 gap-6 mb-8">
+      <div className="flex flex-col grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
         {status_codes.map((code) => {
           return (
             <div className="bg-white p-2 w-72 rounded-lg border-[2.5px] border-teal-950">
@@ -85,7 +85,7 @@ function App() {
         })}
       </div>
       <div className="mb-10 mt-4">
-        <p className="drop-shadow-[0_0px_9px_rgba(0,0,0,0.6)] text-slate-900 text-[23px]">~ Built with lots of 💖 and 🥤 by <span className="relative bottom-[3px] text-[20px] text-white bg-red-500 border-2 border-black rounded-lg px-2 pb-1 pt-0.5">@iamsatyanchal</span> ~</p>
+        <p className="text-center drop-shadow-[0_0px_9px_rgba(0,0,0,0.6)] text-slate-900 text-[23px]">~ Built with lots of 💖 and 🥤 by <span className="relative bottom-[3px] text-[20px] text-white bg-red-500 border-2 border-black rounded-lg px-2 pb-1 pt-0.5">@iamsatyanchal</span> ~</p>
       </div>
     </div>
   )
